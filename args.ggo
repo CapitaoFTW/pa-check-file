@@ -1,0 +1,23 @@
+package "Example of .ggo file"
+version "1.0"
+purpose ""
+description " Options:"
+versiontext "versiontext needed (optional)"
+
+#----------------------------
+# independent options
+#----------------------------
+# Mandatory option
+#option "folder" f "folder" string typestr="dirname" required
+
+# Optional
+#option "num" n "number" int optional
+
+#
+# NOTE: support for this file needs to be enabled in 'makefile'
+#
+option "file" f "fich" string optional multiple
+option "batch" b "fich_with_filenames" string optional
+option "dir" d "directory" string typestr="dirname" optional
+
+text "\n Supported checkFile Extensions:\n\n PDF\n GIF\n JPG\n PNG\n MP4\n ZIP\n HTML\n\n Authors:\n\n Tiago Júlio Santos: 2201755\n Rodrigo Filipe Capitão: 2201741\n"
